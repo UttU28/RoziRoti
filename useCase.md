@@ -17,3 +17,8 @@
 
 https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/fully-managed-secure-apps
 -   ![alt text](image-1.png)
+
+
+
+Hosting Portfolio using Azure
+-   **Storage**
