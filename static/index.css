@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 20px;
+}
+
+.innerContainer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.thisBlock{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.matchPercent {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.fileName {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skillBlock {
+    margin-left: 20px;
+}
+
+.skillName {
+    font-weight: bold;
+}
+
+.skillCount {
+    margin-left: 10px;
+}
+
+.matchBlock {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.skillBlock{
+    display: flex;
+}

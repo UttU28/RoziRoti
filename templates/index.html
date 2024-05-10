@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorted Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <h1>Sorted Data</h1>
+    <div class="container">
+        {% for index, thisData in data.items() %}
+            <div class="innerContainer">
+                <div class="matchPercent">{{ index }}:</div>
+                {% for file_name, file_data in thisData.items() %}
+                    <div class="thisBlock">
+                        {% if file_name != "MatchCount" %}
+                            <div class="fileName">{{ file_name.split("\\")[-1] }}</div>
+                            <div class="skillBlocks">
+                                {% for skill, skill_data in file_data.items() %}
+                                    <div class="skillBlock">
+                                        <div class="skillName">{{ skill }}</div>
+                                        <div class="skillCount">{{ skill_data["Count"] }}</div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <div class="matchBlock">Match Count: {{ thisData["MatchCount"] }}</div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

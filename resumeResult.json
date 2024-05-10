@@ -1,0 +1,161 @@
+{
+  "62": {
+    "DevOps_CloudEngineer_.docx": {
+      "azure": { "Count": 43 },
+      "devops": { "Count": 13 },
+      "pipeline": { "Count": 6 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 3
+  },
+  "55": {
+    "Kelvin_ikpeni_Resume_TCS.docx": {
+      "azure": { "Count": 17 },
+      "devops": { "Count": 30 },
+      "pipeline": { "Count": 7 },
+      "devops pipeline": { "Count": 1 }
+    },
+    "MatchCount": 4
+  },
+  "31": {
+    "Resume_2024.docx": {
+      "azure": { "Count": 24 },
+      "devops": { "Count": 1 },
+      "pipeline": { "Count": 6 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 3
+  },
+  "21": {
+    "DEvops_emy.docx": {
+      "azure": { "Count": 8 },
+      "devops": { "Count": 6 },
+      "pipeline": { "Count": 7 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 3
+  },
+  "16": {
+    "MaheshS_Resume.docx": {
+      "azure": { "Count": 1 },
+      "devops": { "Count": 10 },
+      "pipeline": { "Count": 5 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 3
+  },
+  "14": {
+    "Alex_Langa_Nguepi_AWS_Devops.docx": {
+      "azure": { "Count": 1 },
+      "devops": { "Count": 9 },
+      "pipeline": { "Count": 4 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 2,
+    "Naveen_AWS_Devops_kubernetes_Engineer.pdf": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 7 },
+      "pipeline": { "Count": 7 },
+      "devops pipeline": { "Count": 0 }
+    }
+  },
+  "11": {
+    "JohnLoperResume.pdf": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 6 },
+      "pipeline": { "Count": 5 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 2
+  },
+  "10": {
+    "Kent-Rockwell-Full-Dates-2024-v1.pdf": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 6 },
+      "pipeline": { "Count": 4 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 2
+  },
+  "8": {
+    "Resume_Pratyay.docx": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 5 },
+      "pipeline": { "Count": 3 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 2
+  },
+  "6": {
+    "Austin_Bottorff_Resume.pdf": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 4 },
+      "pipeline": { "Count": 2 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 1,
+    "Petra_Resume_compressed.pdf": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 6 },
+      "pipeline": { "Count": 0 },
+      "devops pipeline": { "Count": 0 }
+    }
+  },
+  "5": {
+    "Data_resume_DEVOPS.docx": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 3 },
+      "pipeline": { "Count": 2 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 2
+  },
+  "3": {
+    "CurtisHodak-Resume.pdf": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 3 },
+      "pipeline": { "Count": 0 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 1
+  },
+  "0": {
+    "StructuredProfile-81a3671a-4aeb-49cc-9393-0e2db3f0da6c.docx": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 0 },
+      "pipeline": { "Count": 0 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "MatchCount": 0,
+    "StructuredProfile-a02f99a5-180e-4a96-8de8-fe785fbc7e23.docx": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 0 },
+      "pipeline": { "Count": 0 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "StructuredProfile-b317edf7-e091-4ef5-89d4-9f77f6579d2f.docx": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 0 },
+      "pipeline": { "Count": 0 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "StructuredProfile-bb955a27-61b6-4dd5-b61c-59323ffbacfc.docx": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 0 },
+      "pipeline": { "Count": 0 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "StructuredProfile-c9ac8089-fc3e-46ee-bfdd-2bb2ad259df0.docx": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 0 },
+      "pipeline": { "Count": 0 },
+      "devops pipeline": { "Count": 0 }
+    },
+    "William Torres Resume 2024.docx": {
+      "azure": { "Count": 0 },
+      "devops": { "Count": 0 },
+      "pipeline": { "Count": 0 },
+      "devops pipeline": { "Count": 0 }
+    }
+  }
+}
