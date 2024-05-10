@@ -1,5 +1,9 @@
+*{
+    background: #303030;
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+    color: #ccc;
 }
 
 .container {
@@ -25,6 +29,7 @@ body {
 .fileName {
     font-weight: bold;
     margin-bottom: 5px;
+    color: #ccc;
 }
 
 .skillBlock {
