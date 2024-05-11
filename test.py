@@ -47,7 +47,7 @@ def count_word_occurrences_in_directory(directoryPath, words):
 
 
 if __name__ == "__main__":
-    directoryPath = 'C:/Users/midhdesk1/Desktop/RoziRoti/devopsResume/'
+    directoryPath = 'static/devopsResume/'
     # words_input = input("Enter comma-separated words: ")
     words_input = "azure, devops, pipeline, devops pipeline"
     words = [word.strip() for word in words_input.split(',')]

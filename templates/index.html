@@ -35,7 +35,15 @@
             {% endfor %}
         </div>
         <div class="innerContainer">
-            <!-- Add PDF and docs Viewer -->
+            <!-- PDF Viewer -->
+            <div class="pdfViewer">
+                <iframe class="pdfHere" src="{{ url_for('static', filename='devopsResume/Austin_Bottorff_Resume.pdf') }}" width="100%" height="1000px"></iframe>
+            </div>
+        
+            <!-- Document Viewer -->
+            <!-- <div class="docViewer">
+                <iframe src="https://docs.google.com/viewer?url=https://example.com/path/to/your/document" width="100%" height="500px"></iframe>
+            </div> -->
         </div>
     </div>
 
@@ -43,9 +51,11 @@
         $(document).ready(function() {
             $('.thisBlock').click(function() {
                 var fileName = $(this).find('.fileName').text();
-                console.log(fileName);
+                console.log("https://docs.google.com/viewer?url={{ url_for('static', filename='devopsResume/') }}" + fileName + "&embedded=true");
+                $('.pdfHere').attr('src', "https://docs.google.com/viewer?url={{ url_for('static', filename='devopsResume/') }}" + fileName + "&embedded=true");
             });
         });
     </script>
+    
 </body>
 </html>
