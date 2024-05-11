@@ -26,7 +26,6 @@ def count_word_occurrences_in_file(filePath, words):
 
 def count_word_occurrences_in_directory(directoryPath, words):
     files = glob.glob(os.path.join(directoryPath, '*'))
-    totalFiles = len(files)
     thisData = {}
     for filePath in files:
         if os.path.isfile(filePath):

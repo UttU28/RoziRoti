@@ -13,6 +13,10 @@
 </head>
 <body>
     <h1>Sorted Data</h1>
+    <div id="inputForm">
+        <input type="text" id="inputString" placeholder="Enter your string">
+        <button type="button" id="submitButton">Submit</button>
+    </div>
     <div class="container">
         <div class="innerContainer">
             <div class="boxContainer">
@@ -54,6 +58,38 @@
                 $('.pdfHere').attr('src', baseUrlForDocs+"{{ url_for('static', filename='devopsResume/') }}" + fileName + "&embedded=true");
             });
         });
+    </script>
+
+    <!-- Input Data -->
+    <script>
+        $(document).ready(function() {
+            $('#submitButton').click(submitForm);
+
+            $('#inputString').keypress(function(event) {
+                if (event.which == 13) {
+                    submitForm();
+                }
+            });
+
+            function submitForm() {
+                var inputString = $('#inputString').val();
+                $.ajax({
+                    type: "POST",
+                    url: "/",
+                    contentType: "application/json",
+                    data: JSON.stringify({ inputString: inputString }),
+                    success: function(response) {
+                        console.log("Input sent to Flask:", inputString);
+                        $('#inputString').val(''); // Clear the input string
+                        location.reload(); // Reload the page
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("Error:", error);
+                    }
+                });
+            }
+        });
+
     </script>
     
 </body>

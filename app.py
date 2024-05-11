@@ -1,11 +1,23 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import json
+from backend import count_word_occurrences_in_directory
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    # Load data from JSON file
+    if request.method == 'POST':
+        data = request.get_json()
+        directoryPath = 'static/devopsResume/'
+        words_input = data.get('inputString')
+        words = [word.strip() for word in words_input.split(',')]
+        jsonData = count_word_occurrences_in_directory(directoryPath, words)
+        jsonFilePath = 'resumeResult.json'
+        with open(jsonFilePath, 'w') as json_file:
+            json.dump(jsonData, json_file)
+        print(f"Sorted data saved to {jsonFilePath}")
+        print("Form String Data:", words_input)
+
     with open('resumeResult.json', 'r') as json_file:
         data = json.load(json_file)
 

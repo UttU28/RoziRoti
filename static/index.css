@@ -13,10 +13,27 @@ body {
     display: flex;
 }
 
+.inputForm{
+    width: 100%;
+}
+
+#inputString, #submitButton{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    outline: none;
+    font-weight: bold;
+}
+
+#inputString{
+    width: 50%;
+}
+
 .innerContainer {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ccc;
 }
 
 .pdfContainer,
