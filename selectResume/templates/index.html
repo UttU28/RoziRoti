@@ -54,8 +54,8 @@
             baseUrlForDocs =" https://docs.google.com/viewer?url=https://raw.githubusercontent.com/UttU28/RoziRoti/main"
             $('.thisBlock').click(function() {
                 var fileName = $(this).find('.fileName').text();
-                console.log(baseUrlForDocs+"{{ url_for('static', filename='devopsResume/') }}" + fileName + "&embedded=true");
-                $('.pdfHere').attr('src', baseUrlForDocs+"{{ url_for('static', filename='devopsResume/') }}" + fileName + "&embedded=true");
+                console.log(baseUrlForDocs+"{{ url_for('static', filename='Azure%20Devops/') }}" + fileName + "&embedded=true");
+                $('.pdfHere').attr('src', baseUrlForDocs+"{{ url_for('static', filename='Azure%20Devops/') }}" + fileName + "&embedded=true");
             });
         });
     </script>
@@ -80,7 +80,7 @@
                     data: JSON.stringify({ inputString: inputString }),
                     success: function(response) {
                         console.log("Input sent to Flask:", inputString);
-                        $('#inputString').val(''); // Clear the input string
+                        // $('#inputString').val(''); // Clear the input string
                         location.reload(); // Reload the page
                     },
                     error: function(xhr, status, error) {

@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
     if request.method == 'POST':
         data = request.get_json()
-        directoryPath = 'static/devopsResume/'
+        directoryPath = 'static/Azure Devops/'
         words_input = data.get('inputString')
         words = [word.strip() for word in words_input.split(',')]
         jsonData = count_word_occurrences_in_directory(directoryPath, words)
@@ -24,4 +24,4 @@ def index():
     return render_template('index.html', data=data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
