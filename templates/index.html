@@ -9,50 +9,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <h1>Sorted Data</h1>
     <div class="container">
         <div class="innerContainer">
-            {% for index, thisData in data.items() %}
-                <div class="matchPercent">{{ index }}:</div>
-                {% for file_name, file_data in thisData.items() %}
-                    <div class="thisBlock">
-                        {% if file_name != "MatchCount" %}
-                            <div class="fileName">{{ file_name.split("\\")[-1] }}</div>
-                            <div class="skillBlocks">
-                                {% for skill, skill_data in file_data.items() %}
-                                    <div class="skillBlock">
-                                        <div class="skillName">{{ skill }}</div>
-                                        <div class="skillCount">{{ skill_data["Count"] }}</div>
-                                    </div>
-                                {% endfor %}
-                            </div>
-                            <div class="matchBlock">Match Count: {{ thisData["MatchCount"] }}</div>
-                        {% endif %}
-                    </div>
+            <div class="boxContainer">
+                {% for index, thisData in data.items() %}
+                    <div class="matchPercent">{{ index }}:</div>
+                    {% for file_name, file_data in thisData.items() %}
+                        <div class="thisBlock">
+                            {% if file_name != "MatchCount" %}
+                                <div class="fileName">{{ file_name.split("\\")[-1] }}</div>
+                                <div class="skillBlocks">
+                                    {% for skill, skill_data in file_data.items() %}
+                                        <div class="skillBlock">
+                                            <div class="skillName">{{ skill }}</div>
+                                            <div class="skillCount">{{ skill_data["Count"] }}</div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="matchBlock">Match Count: {{ thisData["MatchCount"] }}</div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
                 {% endfor %}
-            {% endfor %}
-        </div>
-        <div class="innerContainer">
-            <!-- PDF Viewer -->
-            <div class="pdfViewer">
-                <iframe class="pdfHere" src="{{ url_for('static', filename='devopsResume/Austin_Bottorff_Resume.pdf') }}" width="100%" height="1000px"></iframe>
             </div>
-        
-            <!-- Document Viewer -->
-            <!-- <div class="docViewer">
-                <iframe src="https://docs.google.com/viewer?url=https://example.com/path/to/your/document" width="100%" height="500px"></iframe>
-            </div> -->
+        </div>
+        <div class="pdfContainer">
+            <div class="pdfViewer">
+                <iframe class="pdfHere" src="" width="100%" height="1000px"></iframe>
+            </div>
         </div>
     </div>
 
     <script>
         $(document).ready(function() {
+            // baseUrlForDocs =" https://docs.google.com/viewer?url=https://raw.githubusercontent.com/UttU28/RoziRoti/main"
+            baseUrlForDocs =" https://docs.google.com/viewer?url=https://raw.githubusercontent.com/UttU28/RoziRoti/main"
             $('.thisBlock').click(function() {
                 var fileName = $(this).find('.fileName').text();
-                console.log("https://docs.google.com/viewer?url={{ url_for('static', filename='devopsResume/') }}" + fileName + "&embedded=true");
-                $('.pdfHere').attr('src', "https://docs.google.com/viewer?url={{ url_for('static', filename='devopsResume/') }}" + fileName + "&embedded=true");
+                console.log(baseUrlForDocs+"{{ url_for('static', filename='devopsResume/') }}" + fileName + "&embedded=true");
+                $('.pdfHere').attr('src', baseUrlForDocs+"{{ url_for('static', filename='devopsResume/') }}" + fileName + "&embedded=true");
             });
         });
     </script>

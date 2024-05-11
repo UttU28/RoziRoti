@@ -1,10 +1,11 @@
-*{
+* {
     background: #303030;
 }
+
 body {
     font-family: "Poppins", sans-serif;
     color: #ccc;
-    width: 100%;
+    width: 98%;
 }
 
 .container {
@@ -13,17 +14,33 @@ body {
 }
 
 .innerContainer {
-    width: 100%;
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
 }
 
-.thisBlock{
-    border: 1px solid #ccc;
-    padding: 10px;
+.pdfContainer,
+.innerContainer {
+    width: 100%;
+    height: 1000px;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+.pdfViewer{
+    width: 100%;
+    scrollbar-width: 1px;
+}
+
+.boxContainer {
+    overflow: scroll;
+}
+
+
+.thisBlock {
+    background: #414141;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .matchPercent {
@@ -46,7 +63,7 @@ body {
 }
 
 .skillCount {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .matchBlock {
@@ -54,10 +71,26 @@ body {
     margin-top: 5px;
 }
 
-.skillBlock{
+.skillBlock {
     display: flex;
 }
 
-.pdfViewer{
-    width: 100%;
+
+
+
+::-webkit-scrollbar {
+    width: 1px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
