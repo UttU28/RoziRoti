@@ -44,6 +44,15 @@
         </div>
         <div class="thisBlock">
             <hr>
+            <h3 class="thisTag">PROFESSIONAL SUMMARY</h3>
+            <hr>
+            {% for experience in data["professionalSummary"] %}
+                    <p>‣ {{ experience }}</p>
+            {% endfor %}
+            <hr>
+        </div>
+        <div class="thisBlock">
+            <hr>
             <h3 class="thisTag">PROFESSIONAL EXPERIENCE</h3>
             <hr>
             {% for experience in data["professionalExperience"] %}
