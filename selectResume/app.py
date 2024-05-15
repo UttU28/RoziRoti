@@ -9,6 +9,7 @@ def index():
     if request.method == 'POST':
         data = request.get_json()
         directoryPath = 'static/Azure Devops/'
+        directoryPath = 'static/sampleResumes/'
         words_input = data.get('inputString')
         words = [word.strip() for word in words_input.split(',')]
         jsonData = count_word_occurrences_in_directory(directoryPath, words)

@@ -51,7 +51,8 @@
     <script>
         $(document).ready(function() {
             // baseUrlForDocs =" https://docs.google.com/viewer?url=https://raw.githubusercontent.com/UttU28/RoziRoti/main"
-            baseUrlForDocs =" https://docs.google.com/viewer?url=https://raw.githubusercontent.com/UttU28/RoziRoti/main"
+            baseUrlForDocs =" https://docs.google.com/viewer?url=https://raw.githubusercontent.com/UttU28/RoziRoti/main/sampleResumes"
+            // baseUrlForDocs =" https://docs.google.com/viewer?url=https://raw.githubusercontent.com/UttU28/RoziRoti/main/selectResume"
             $('.thisBlock').click(function() {
                 var fileName = $(this).find('.fileName').text();
                 console.log(baseUrlForDocs+"{{ url_for('static', filename='Azure%20Devops/') }}" + fileName + "&embedded=true");
