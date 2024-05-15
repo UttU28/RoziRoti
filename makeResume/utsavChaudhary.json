@@ -23,7 +23,7 @@
         "SDKs": "ReactNative, Unity3D, Android Studio, Arduino"
     },
     "professionalSummary": [
-        "Skilled in deploying resources in Azure cloud interface which include IaaS models, PaaS models, configure role-based access, provision application resources, tune existing resources, work with Azure DevOps, and deploy resources using terraform, ARM templates.",
+        "Skilled in deploying resources in [Azure] cloud interface which include IaaS models, PaaS models, configure role-based access, provision application resources, tune existing resources, work with Azure DevOps, and deploy resources using terraform, ARM templates.",
         "Worked on migrating  on-prem  infrastructure  and  application  to  Azure  and  adopt  CI/CD  using  Azure  DevOps. Worked  with Microsoft  Identity  Manager  Management  authentication  and  authorization including  Azure  Default Directory (AD). Set up Azure devops CI/CD release and validation pipelines.",
         "Experience  with  Azure  Resource  Manager  (ARM)  templates,  Resource  Groups,  Virtual  Networks,  Subnets, Virtual  Machines,  Blob  Storage,  Azure-CLI,  Network  Design,  Azure  Automation,  Azure  Active  Directory, Azure  AD  Connect,  Application  Gateway,  Key  vaults,  Site  Recovery,  Azure  Boards,  Azure  Repos,  Azure Pipelines, Azure Artifacts and Azure Test Plan resources.",
         "Expert with HashiCorp Terraform automation for provisioning and managing various cloud infrastructures. Deployed Terraform scripts using Azure Build and Release pipelines. ",
@@ -145,15 +145,6 @@
                 "Integrated RSS feed handling into Python scripts, enabling streamlined data processing and utilization for various applications.",
                 "Utilized Azure services for virtual machines, databases, and other infrastructure requirements, ensuring scalable and reliable automation solutions.",
                 "Implemented end-to-end automation workflows, ensuring seamless execution of tasks from data acquisition to storage and processing."
-            ]
-        },
-        {
-            "name": "sdv",
-            "position": "sdv",
-            "location": "sdv, sdv",
-            "duration": "sdv",
-            "responsiblity": [
-                
             ]
         }
     ]
