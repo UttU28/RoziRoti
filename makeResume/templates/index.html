@@ -6,12 +6,18 @@
     <title>UTSAV CHAUDHARY</title>
     <!-- Link external CSS file -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style type="text/css" media="print">
+        @page {
+            size: auto;   /* auto is the initial value */
+            margin: 15px;  /* this affects the margin in the printer settings */
+        }
+    </style>
 </head>
 <body>
     <div class="resumeContainer">
         <div class="thisBlock badges">
-            <img class="certImage" src="./images/associate.png" alt="AZ-204">
-            <img class="certImage" src="./images/expert.png" alt="AZ-400">
+            <img class="certImage" src="{{ url_for('static', filename='images/associate.png') }}" alt="AZ-204">
+            <img class="certImage" src="{{ url_for('static', filename='images/expert.png') }}" alt="AZ-400">
         </div>
         <div class="thisBlock">
             <h1 class="myName">{{ data["basic"]["name"] }}</h1>
