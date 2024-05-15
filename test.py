@@ -1,3 +1,47 @@
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from sklearn.feature_extraction.text import TfidfVectorizer
+import string
+
+# Download necessary NLTK data files
+nltk.download('punkt')
+nltk.download('stopwords')
+
+def preprocess_text(text):
+    # Convert text to lowercase
+    text = text.lower()
+    # Remove punctuation
+    text = text.translate(str.maketrans('', '', string.punctuation))
+    # Tokenize text
+    tokens = word_tokenize(text)
+    # Remove stopwords
+    tokens = [word for word in tokens if word not in stopwords.words('english')]
+    return tokens
+
+def extract_keywords(text, top_n=10):
+    # Preprocess text
+    tokens = preprocess_text(text)
+    # Join tokens back to form a single string
+    processed_text = ' '.join(tokens)
+    # Create a TF-IDF vectorizer
+    vectorizer = TfidfVectorizer()
+    # Fit and transform the processed text
+    tfidf_matrix = vectorizer.fit_transform([processed_text])
+    # Get feature names (words)
+    feature_names = vectorizer.get_feature_names_out()
+    # Get TF-IDF scores
+    tfidf_scores = tfidf_matrix.toarray()[0]
+    # Create a dictionary of words and their TF-IDF scores
+    tfidf_dict = dict(zip(feature_names, tfidf_scores))
+    # Sort the dictionary by scores in descending order
+    sorted_tfidf = sorted(tfidf_dict.items(), key=lambda item: item[1], reverse=True)
+    # Get the top N keywords
+    top_keywords = [word for word, score in sorted_tfidf[:top_n]]
+    return top_keywords
+
+# Sample text
+text = """
 {
     "basic": {
         "name": "Utsav Chaudhary",
@@ -158,3 +202,8 @@
         }
     ]
 }
+"""
+
+# Extract keywords
+keywords = extract_keywords(text, top_n=10)
+print("Technical Keywords:", keywords)
