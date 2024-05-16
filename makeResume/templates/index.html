@@ -53,7 +53,7 @@
             <h3 class="thisTag">PROFESSIONAL SUMMARY</h3>
             <hr>
             {% for experience in data["professionalSummary"] %}
-                    <p>‣ {{ experience }}</p>
+                    <p>‣ {{ experience.replace("[","<strong>").replace("]","</strong>") | safe }}</p>
             {% endfor %}
             <hr>
         </div>
@@ -68,7 +68,7 @@
                 </div>
                 <p class="thisData">Responsibilities:</p>
                 {% for eachResponsiblity in experience["responsiblity"] %}
-                    <p>‣ {{ eachResponsiblity }}</p>
+                    <p>‣ {{ eachResponsiblity.replace("[","<strong>").replace("]","</strong>") | safe }}</p>
                 {% endfor %}
             <hr>
             {% endfor %}
