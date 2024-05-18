@@ -40,6 +40,8 @@
     "Deployed [Kubernetes clusters] on Azure VMs using AKS and managed local deployments in Kubernetes by creating local clusters.",
     "Proficient in implementing Kubernetes (k8s) Clusters for running [microservices] and pushed them into [production] with [Kubernetes] backed Infrastructure.",
     "Developed automated Kubernetes clusters via Ansible playbooks. Used Calico to provide secured network connectivity to the docker containers.",
+    "Designed and implemented sophisticated web scrapers using Selenium to extract and process large volumes of data from various dynamic and static websites. Ensured robustness by incorporating error handling, retries, and logging mechanisms to manage network issues and site structure changes effectively.",
+    "Streamlined data collection processes by integrating Python scripts with SQL database for efficient data storage and retrieval. Utilized pandas for data cleaning and transformation, and employed Cron Jobs to automate regular scraping tasks, ensuring timely and accurate data updates.",
     "Hands-on experience with [Ansible YAML scripts] that automates cloud provisioning, configuration management, intra-service orchestration and application deployment.",
     "Expert with [HashiCorp Terraform] automation for provisioning and managing various cloud infrastructures. Deployed [Terraform] scripts using [Azure Build and Release] pipelines.",
     "Proficient in leveraging reusable Terraform templates/modules for provisioning and managing Azure infrastructure as code (IaC) to establish [Dev, QA, UAT, and production] environments through [configuration] files. Utilized [Azure Storage] to store [Terraform state] files, ensuring comprehensive tracking of all environment changes.",
@@ -109,7 +111,7 @@
         "Managed pulling Docker images from Docker hub and stored files in Azure storage account by implementing various lifecycle policies. Created Docker images and handled multiple images primarily for middleware installations.",
         "Worked on Kubernetes to manage containerized applications using its nodes. Responsible for build and deployment automation using Docker, Kubernetes containers.",
         "Designed and developed the security components of Kubernetes in multiple cloud environments and has good understanding of Kubernetes multi-tenant deployments at scale.",
-        "Created and managed organization’s infrastructure within Azure using Terraform and Ansible, automated deployment processes with GitHub Actions.",
+        "Created and managed organization's infrastructure within Azure using Terraform and Ansible, automated deployment processes with GitHub Actions.",
         "Provisioned Terraform Enterprise with all the sophisticated features and common workflows.",
         "Wrote Ansible playbooks, Roles and followed best practices to utilize Ansible Handlers with multiple tasks to trigger various handlers and to decouple handlers from their names.",
         "Involve in daily stand-up meetings, sprint backlog and sprint retrospective for Agile Scrum Process."
