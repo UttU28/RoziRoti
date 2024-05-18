@@ -29,19 +29,6 @@
         </div>
         <div class="thisBlock">
             <hr>
-            <h3 class="thisTag">EDUCATION</h3>
-            <hr>
-            <div class="myTable">
-                <h4 class="thisTitle">{{ data["education"]["universityName"] }}</h4>
-                <h4 class="italicData">{{ data["education"]["duration"] }}</h4>
-            </div>
-            <div class="myTable">
-                <p class="italicData">{{ data["education"]["field"] }}</p>
-                <p class="boldData">GPA: {{ data["education"]["gpa"] }}</p>
-            </div>
-        </div>
-        <div class="thisBlock">
-            <hr>
             <h3 class="thisTag">TECHNICAL SKILLS</h3>
             <hr>
             {% for skillCategory, skillData in data["technicalSkills"].items() %}
@@ -74,6 +61,19 @@
             {% endfor %}
         </div>
         <hr>
+        <div class="thisBlock">
+            <hr>
+            <h3 class="thisTag">EDUCATION</h3>
+            <hr>
+            <div class="myTable">
+                <h4 class="thisTitle">{{ data["education"]["universityName"] }}</h4>
+                <h4 class="italicData">{{ data["education"]["duration"] }}</h4>
+            </div>
+            <div class="myTable">
+                <p class="italicData">{{ data["education"]["field"] }}</p>
+                <p class="boldData">GPA: {{ data["education"]["gpa"] }}</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
