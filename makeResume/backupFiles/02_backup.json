@@ -1,0 +1,144 @@
+{
+  "basic": {
+    "name": "Utsav Chaudhary",
+    "email": "utsav.midhtech@gmail.com",
+    "phoneNumber": "(607)-296-9583",
+    "linkedIn": "https://www.linkedin.com/in/utsav-chaudhary-875096123/"
+  },
+  "education": {
+    "universityName": "Binghamton University",
+    "duration": "Aug 2022 - Dec 2023",
+    "field": "Master of Science in Computer Science",
+    "gpa": "3.44/4"
+  },
+  "technicalSkills": {
+    "Operating Systems Windows": "Linux distributions (CentOS, Ubuntu, RedHat, Debian)",
+    "Programming Languages": "Python, Java, .NET, C++, C#, SQL, JSON, HTML, CSS",
+    "Automation and Build Tools": "Ansible, Jenkins, Terraform, Puppet, Chef, ANT, Maven",
+    "Version Control Tools": "GIT, GitHub, Bitbucket, GitLab",
+    "Databases": "Oracle, MongoDB, MySQL, CosmosDB, PostgreSQL, Firebase, Cassandra",
+    "Scripting": "Python, Shell, PowerShell, Ruby, JavaScript, Jinja",
+    "Methodologies": "Agile, Scrum, Test-driven Approach",
+    "Tools": "Docker, Kubernetes, Jira, Shell, Bash, Automation, NodeJS, jQuery, Django, Flask, XML, Nginx, Apache HTTP",
+    "SDKs": "ReactNative, Unity3D, Android Studio, Arduino"
+  },
+  "professionalSummary": [
+    "Skilled in deploying resources in [Azure] cloud interface which include IaaS models, PaaS models, configure role-based access, provision application resources, tune existing resources, work with [Azure DevOps], and deploy resources using [terraform, ARM] templates.",
+    "Worked on migrating on-prem infrastructure and application to Azure and adopt CI/CD using Azure DevOps and GitHub Actions Pipeline. Worked with [Microsoft Identity Manager Management] authentication and authorization including [Azure Default Directory (AD)]. Set up [Azure devops CI/CD] release and validation pipelines.",
+    "Experience with [Azure Resource Manager (ARM)] templates, [Resource Groups, Virtual Networks, Subnets, Virtual Machines, Blob Storage, Azure-CLI, Network Design, Azure Automation, Azure Active Directory, Azure AD Connect, Application Gateway, Key vaults, Site Recovery, Azure Boards, Azure Repos, Azure Pipelines, Azure Artifacts] and [Azure Test Plan] resources.",
+    "Proficient in planning, collaborating, and tracking work/assignments using [Azure Boards] agile productivity tools.",
+    "Worked on using [CI/CD Azure Pipelines] to build and test code projects. Focused on [triggers] that automatically invokes build pipelines for [Continuous Integration] of source code changes and release pipelines for [Continuous Deployment].",
+    "Proficient in designing and implementing [GitHub Pipeline] workflows for (CI/CD) strategies, utilizing Infrastructure as Code (IaC) paradigms.",
+    "Expertise in defining [GitHub Actions] workflows for [provisioning] application resources, managing secrets and environment variables securely, and orchestrating complex deployment pipelines.",
+    "Experienced in building testing pipeline and integrating [Static Code Analysis, Load Testing, Automated Testing and Compatibility Testing]",
+    "Proficiency in [monitoring] and [optimizing] GitHub Actions [workflows] for performance, resource utilization, and cost efficiency, utilizing built-in metrics and logging feature",
+    "Experienced in leveraging GitHub Actions Marketplace integrations and custom actions to extend automation capabilities and integrate with third-party tools and services.",
+    "Proficient in invoking [HTTP trigger] functions with HTTP request and build serverless APIs. Worked with [Postman API] testing tool to call HTTP triggers and performed load testing on the applications using Azure DevOps Services.",
+    "Experience in adopting various DevOps delivery methods including [Kubernetes] and Cloud develop [Helm charts/Ansible scripts] for automation and utilizing Azure cloud solutions for hosting applications, transfer via APIs.  ",
+    "Skilled in integrating [Azure DevOps] with [Docker containers] using Azure DevOps pipelines to orchestrate microservices builds and deployments to Azure Kubernetes Service (AKS). Implemented configuration automation and server virtualization using Docker in QA and production environments within Azure [DevOps pipelines].",
+    "Experienced in deploying [AKS clusters], scaled and managed Docker containers across a cluster of container hosts.",
+    "Experience in maintaining [microservices] using [Kubernetes] as the front-end orchestrator for Docker containers. Worked on setting up Kubernetes clusters on Azure (AKS) to test various features",
+    "Deployed [Kubernetes clusters] on Azure VMs using AKS and managed local deployments in Kubernetes by creating local clusters.",
+    "Proficient in implementing Kubernetes (k8s) Clusters for running [microservices] and pushed them into [production] with [Kubernetes] backed Infrastructure.",
+    "Developed automated Kubernetes clusters via Ansible playbooks. Used Calico to provide secured network connectivity to the docker containers.",
+    "Designed and implemented sophisticated web scrapers using Selenium to extract and process large volumes of data from various dynamic and static websites. Ensured robustness by incorporating error handling, retries, and logging mechanisms to manage network issues and site structure changes effectively.",
+    "Streamlined data collection processes by integrating Python scripts with SQL database for efficient data storage and retrieval. Utilized pandas for data cleaning and transformation, and employed Cron Jobs to automate regular scraping tasks, ensuring timely and accurate data updates.",
+    "Hands-on experience with [Ansible YAML scripts] that automates cloud provisioning, configuration management, intra-service orchestration and application deployment.",
+    "Expert with [HashiCorp Terraform] automation for provisioning and managing various cloud infrastructures. Deployed [Terraform] scripts using [Azure Build and Release] pipelines.",
+    "Proficient in leveraging reusable Terraform templates/modules for provisioning and managing Azure infrastructure as code (IaC) to establish [Dev, QA, UAT, and production] environments through [configuration] files. Utilized [Azure Storage] to store [Terraform state] files, ensuring comprehensive tracking of all environment changes.",
+    "Skilled in adopting DevOps Culture to automate the entire [Software Development Life cycle (SDLC)] and Implemented CI with integrity and reliability.",
+    "Experienced with version control systems such as [GIT, Subversion]. Utilized GitBash tool to clone the private and public repositories. Skilled in building project branches, merge and release them into various environments.",
+    "Experience in scripting languages like [Python, Ruby, Perl, Shell, Bash] and familiar with [storage, Networking, PowerShell] commands. Experienced in creating automated [PowerShell] Scripts for [web-app deployment].",
+    "Experience in working with [Agile] methodologies and [Scrum] practices. Handled daily stand-up calls to measure the team performance and manage the work."
+  ],
+  "professionalExperience": [
+    {
+      "name": "Entegris",
+      "position": "Cloud DevOps Engineer",
+      "location": "Remote",
+      "duration": "Aug 2022 - Present",
+      "responsiblity": [
+        "Configured, deployed, and managed [Azure services] such as storage accounts, Key vault, Cosmos DB, containerized app services with [Application insights] using Azure [ARM] templates and [Azure DevOps YAML pipelines].",
+        "Extensively involved in migrating [On-Premises] infrastructure to [Azure cloud] which includes [Databases] to Microsoft [Azure SQL Database], [WebServices] and involved in orchestration technologies like [Docker and Kubernetes].",
+        "Designed mission-critical [architectures] with [Azure Devops] to meet clients' technical, functional, security, and business needs and executed implementation plans to [deploy Azure services] and move workloads to Azure cloud.",
+        "Created and managed [Azure AD tenants], [manage] [users and groups] in Azure AD, and configure application [integration] with Azure [Default Directory]. Configured Multi-Factor authentication (MFA) and aligned single sign-on (SSO).",
+        "[Build and Installed] Azure resources of different providers Compute, Network, Application gateway using ARM templates and [implemented, maintained Dev, Test, UAT and Production] environments leveraging infrastructure as code using [Azure ARM templates].",
+        "Utilized Azure [Storage Explorer], Azure [Import/Export service] and [AzCopy] to efficiently transfer the data to Azure [Blob Storage] with high throughput by scaling out copy jobs to multiple Azure storage servers. Implemented ExpressRoute which reduces data transfer time between cloud environments.",
+        "Assisted the migration from [JIRA] & [Kanban] to [Azure Test Plan] for testing, and using [Azure Boards] to view stories, tasks, bugs, and features. Overseeing parallel usage of both systems to ensure a smooth transition.",
+        "Followed [Agile] methodologies to measure the overall workflow of projects and attended daily stand-up meetings.",
+        "Experience with [Azure Monitor] to track application performance and service health.",
+        "[Designed ARM templates] for deploying to [Azure Kubernetes Service] and triggered build process using PowerShell and Bash in [Azure pipelines].",
+        "Involved in designing and configuring Azure Virtual Networks (VNets), Subnets, Service and Private Endpoints, DNS Servers, Address space, Security Policies and VNet Peering's.",
+        "[Automated] CI/CD [pipelines] within [Azure DevOps] to all major platforms including [Kubernetes, Azure VMs]. Build jobs using [Local Agents] and [Microsoft Hosted agents], automated testing tasks, and orchestrated deployment and release across multiple environments.",
+        "Worked on setting up CI for new branches, automating builds, managing extensions, securing Azure Pipelines, and configuring [Agent Pools] and [Parallel Jobs] in Azure DevOps.",
+        "Involved in writing [Ansible playbooks] to push out new / confirm configuration of the deployed [infrastructure]. Defined tasks to Ansible modules for roles and playbooks.",
+        "[Automated] the [deployment] process of the [Playbook Scipts] on the required infrastructure by adding it to the [pipeline].",
+        "Configured various [GIT webhooks] for CI operations and implemented End-to-End automation for all build and CD.",
+        "Implemented [Docker Container Engine] and used to [build, deploy, and run] distributed applications",
+        "Worked on creating the [Docker] [Containers] and Docker [Consoles] for managing the [application lifecycle] and to enable developers to [package] application [source code] with OS libraries and dependencies.",
+        "Implemented [Greenfield Project] leveraging [Docker] and [AKS] for use and process real-time data streams.",
+        "Added CI/CD pipeline to AKS clusters with automated [Routine Tasks], and setup [Canary Deployment] strategies. Used AKS [Virtual Nodes] to provision the pods and to simplify the deployment and management of microservices.",
+        "Created AKS clusters in Azure Portal with the Azure-CLI. Deployed Azure Kubernetes Clusters using [Node Port] and [deployed] into [Dev, QA, UAT and Production Environments].",
+        "Utilized [Terraform] to [build and provision] the [architecture] of working teams by [writing modules] for services such as [APIs, queues, and functions].",
+        "[Monitored network performance] to comply with [service] level [agreements] and explored configuring hybrid connectivity between [On-Premises] and [Azure cloud] environments."
+      ]
+    },
+    {
+      "name": "WonderBiz",
+      "position": "Azure - Cloud DevOps Engineer",
+      "location": "Mumbai, MH",
+      "duration": "Aug 2020 - Aug 2022",
+      "responsiblity": [
+        "Designed cloud native solutions with [Azure PAAS] services leveraging [Azure storage, Azure SQL]. Designed [event-driven] architectures using serverless [functions], orchestrated and managed through [GitHub Actions].",
+        "Created and deployed entire Azure infrastructure declaratively using [Azure ARM Templates]. Supported [migration] of existing applications to [Azure cloud], using GitHub [Actions] for [CI/CD].",
+        "Designed, build, administered and deployed [scalable] Azure resources to ensure [security], [availability], [scalability], and [reliability] of applications.",
+        "Created and configured [[HTTP Triggers]] in Azure Functions enabling [Application Insights] for monitoring, debugging, and performing [load testing] on the applications using [Python API] for uploading all the agent logs into [Blob Storage], with automation through GitHub Actions.",
+        "Implemented Network Security Groups (NSGs) to control traffic to inbound and outbound ports and allowed access to network interfaces (NICs) and VMs.",
+        "Hosted private Git repositories for source code control. Developed build workflows, additionally utilizing [GitHub Actions] to [enhance automation] capabilities, [enabling parallel] workflows, and [integrating seamlessly] with repositories.",
+        "Automated Tekton pipelines using [GitHub Actions] which helped users to not have specific Kubernetes knowledge beforehand and teams to transform to cloud native solutions for CI/CD pipelines.",
+        "Managed pulling [Docker] images from [Docker hub] and stored files in Azure storage account by implementing various [lifecycle] policies.",
+        "Worked on [Kubernetes] to manage containerized applications using its nodes. [Responsible] for [build] and [deployment] automation using [Docker & Kubernetes] containers.",
+        "Assisted in designing and development of the [security] components of Kubernetes in multiple cloud environments.",
+        "[Created and managed] organization's infrastructure within Azure using [Terraform] and [Ansible], automated [deployment] processes with [GitHub Actions].",
+        "Provisioned [Terraform Enterprise] with all the sophisticated features and common workflows.",
+        "Wrote [Ansible playbooks], Roles and followed [best practices] to utilize [Ansible Handlers] with multiple tasks to [trigger] various [handlers] and to decouple handlers from their names.",
+        "Involve in daily [stand-up] meetings, sprint [backlog] and sprint [retrospective] for [Agile Scrum] Process."
+      ]
+    },
+    {
+      "name": "UnderDOGS Studio",
+      "position": "Ansible Python Automation Engineer",
+      "location": "Mumbai, MH",
+      "duration": "June 2018 - Aug 2020",
+      "responsiblity": [
+        "Developed custom [Ansible Modules] in [Python] to enhance functionality and automate tasks within the infrastructure.",
+        "Worked on in-line scripts automation for [Ansible] and [Terraform], using Bash, Python, Shell, and Powershell.",
+        "[Developed] and maintained [scripts] to [automate] repetitive [tasks], [enhancing productivity] and efficiency across the team using [Python, Bash, and PowerShell].",
+        "Used [Ansible] to automate [Configuration Management] tasks, ensuring [consistency], [repeatability] and avoiding [configuration drift] across environments.",
+        "Collaborated with fellow DevOps engineers to [support] the [development] and [maintenance] of CI/CD [pipelines].",
+        "Tested [Jenkins] for CI and automated scheduled data [scraping] and [uploading] to databases, ensuring [timely] and [accurate] [data] updates.",
+        "Assisted in the deployment and monitoring of automated solutions, [ensuring smooth] operation and [quick issue] resolution.",
+        "Knowledge and hands-on experience with popular DevOps tools such as Docker, Kubernetes, Jenkins, Ansible, and Terraform.",
+        "Experience with Infrastructure as Code (IaC) tools, particularly [Azure Resource Manager] (ARM) templates and Terraform and Ansible for automating configuration management and deployment tasks.",
+        "Strong [communication skills] for effective interaction with various stakeholders, including developers, operations teams, and management.",
+        "Gained experience in [critical thinking] and [problem-solving] abilities, essential for [troubleshooting] issues and [optimizing] processes."
+      ]
+    },
+    {
+      "name": "UnderDOGS Studio",
+      "position": "Python Engineer (Intern)",
+      "location": "Mumbai, MH",
+      "duration": "Jan 2018 - June 2018",
+      "responsiblity": [
+        "Developed [Python scripts] to automate tasks using APIs, including creation and utilization, and implemented [web scraping] and [testing] with [Selenium].",
+        "Utilized [Python libraries] such as [requests] for efficient handling of HTTP requests for [data collection].",
+        "Used libraries like [Pandas, NumPy] for [sorting and filtering] data and used [Databases] for [storing, and retrieving] data.",
+        "Leveraged [Redis] for caching and optimizing data retrieval processes, enhancing system performance and efficiency.",
+        "Integrated [RSS] feed handling into Python scripts, enabling streamlined [data processing] and utilization for various applications.",
+        "Utilized [Azure services] for [virtual machines, databases], and other [infrastructure] requirements, ensuring scalable and reliable automation solutions.",
+        "Implemented end-to-end automation [workflows], ensuring seamless [execution of tasks] from data [acquisition] to [storage] and [processing].",
+        "Contributed to the development of [internal tools] to streamline [repetitive tasks], [increasing] team [productivity] and [efficiency]."
+      ]
+    }
+  ]
+}
