@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UTSAV CHAUDHARY</title>
+    <title>Utsav_Chaudhary_Resume</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <style type="text/css" media="print">
         @page {
@@ -41,38 +41,46 @@
             {% for experience in data["professionalSummary"] %}
                     <p>‣ {{ experience.replace("[","<strong>").replace("]","</strong>") | safe }}</p>
             {% endfor %}
-            <hr>
         </div>
         <div class="thisBlock">
             <hr>
             <h3 class="thisTag">PROFESSIONAL EXPERIENCE</h3>
             <hr>
             {% for experience in data["professionalExperience"] %}
+                <h4 class="thisTitle">{{ experience.name }} ({{ experience.location }}) | {{ experience.position }}</h4>
                 <div class="myTable">
-                    <h4 class="thisTitle">{{ experience.name }} ({{ experience.location }}) | {{ experience.position }}</h4>
+                    <p class="thisData">Responsibilities:</p>
                     <h4 class="italicData">{{ experience.duration }}</h4>
                 </div>
-                <p class="thisData">Responsibilities:</p>
                 {% for eachResponsiblity in experience["responsiblity"] %}
                     <p>‣ {{ eachResponsiblity.replace("[","<strong>").replace("]","</strong>") | safe }}</p>
                 {% endfor %}
-            <hr>
+                <hr>
             {% endfor %}
         </div>
-        <hr>
         <div class="thisBlock">
             <hr>
             <h3 class="thisTag">EDUCATION</h3>
             <hr>
             <div class="myTable">
-                <h4 class="thisTitle">{{ data["education"]["universityName"] }}</h4>
-                <h4 class="italicData">{{ data["education"]["duration"] }}</h4>
+                <h4 class="thisTitle">{{ data["education"]["msuniversityName"] }}</h4>
+                <h4 class="italicData">{{ data["education"]["msduration"] }}</h4>
             </div>
             <div class="myTable">
-                <p class="italicData">{{ data["education"]["field"] }}</p>
-                <p class="boldData">GPA: {{ data["education"]["gpa"] }}</p>
+                <p class="italicData">{{ data["education"]["msfield"] }}</p>
+                <p class="boldData">GPA: {{ data["education"]["msgpa"] }}</p>
+            </div>
+            <hr>
+            <div class="myTable">
+                <h4 class="thisTitle">{{ data["education"]["uguniversityName"] }}</h4>
+                <h4 class="italicData">{{ data["education"]["ugduration"] }}</h4>
+            </div>
+            <div class="myTable">
+                <p class="italicData">{{ data["education"]["ugfield"] }}</p>
+                <p class="boldData">GPA: {{ data["education"]["uggpa"] }}</p>
             </div>
         </div>
+        <hr>
     </div>
 </body>
 </html>

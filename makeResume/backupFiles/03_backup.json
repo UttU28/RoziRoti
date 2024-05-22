@@ -6,14 +6,10 @@
     "linkedIn": "https://www.linkedin.com/in/utsav-chaudhary-875096123/"
   },
   "education": {
-    "msuniversityName": "Binghamton University (SUNY)",
-    "msduration": "Aug 2022 - Dec 2023",
-    "msfield": "Master of Science in Computer Science",
-    "msgpa": "3.44/4",
-    "uguniversityName": "Universal College of Engineering",
-    "ugduration": "Jul 2016 - Jun 2020",
-    "ugfield": "Bachelor's in Computer Engineering",
-    "uggpa": "8.09/10"
+    "universityName": "Binghamton University",
+    "duration": "Aug 2022 - Dec 2023",
+    "field": "Master of Science in Computer Science",
+    "gpa": "3.44/4"
   },
   "technicalSkills": {
     "Operating Systems Windows": "Linux distributions (CentOS, Ubuntu, RedHat, Debian)",
@@ -27,7 +23,6 @@
     "SDKs": "ReactNative, Unity3D, Android Studio, Arduino"
   },
   "professionalSummary": [
-    "Experienced DevOps / Cloud Engineer with 4+ years of hands-on experience specializing in [Azure].",
     "Skilled in deploying resources in [Azure] cloud interface which include IaaS models, PaaS models, configure role-based access, provision application resources, tune existing resources, work with [Azure DevOps], and deploy resources using [terraform, ARM] templates.",
     "Worked on migrating on-prem infrastructure and application to Azure and adopt CI/CD using Azure DevOps and GitHub Actions Pipeline. Worked with [Microsoft Identity Manager Management] authentication and authorization including [Azure Default Directory (AD)]. Set up [Azure devops CI/CD] release and validation pipelines.",
     "Experience with [Azure Resource Manager (ARM)] templates, [Resource Groups, Virtual Networks, Subnets, Virtual Machines, Blob Storage, Azure-CLI, Network Design, Azure Automation, Azure Active Directory, Azure AD Connect, Application Gateway, Key vaults, Site Recovery, Azure Boards, Azure Repos, Azure Pipelines, Azure Artifacts] and [Azure Test Plan] resources.",
@@ -58,10 +53,10 @@
   ],
   "professionalExperience": [
     {
-      "name": "Client: TransAmerica",
+      "name": "Entegris",
       "position": "Cloud DevOps Engineer",
-      "location": "Remote, USA",
-      "duration": "Jan 2023 - Present",
+      "location": "Remote",
+      "duration": "Aug 2022 - Present",
       "responsiblity": [
         "Configured, deployed, and managed [Azure services] such as storage accounts, Key vault, Cosmos DB, containerized app services with [Application insights] using Azure [ARM] templates and [Azure DevOps YAML pipelines].",
         "Extensively involved in migrating [On-Premises] infrastructure to [Azure cloud] which includes [Databases] to Microsoft [Azure SQL Database], [WebServices] and involved in orchestration technologies like [Docker and Kubernetes].",
@@ -89,10 +84,10 @@
       ]
     },
     {
-      "name": "Softline Solutions PVT. LTD.",
-      "position": "Azure/Cloud DevOps Engineer",
-      "location": "Bangalore, IN",
-      "duration": "Jul 2020 - Jul 2022",
+      "name": "WonderBiz",
+      "position": "Azure - Cloud DevOps Engineer",
+      "location": "Mumbai, MH",
+      "duration": "Aug 2020 - Aug 2022",
       "responsiblity": [
         "Designed cloud native solutions with [Azure PAAS] services leveraging [Azure storage, Azure SQL]. Designed [event-driven] architectures using serverless [functions], orchestrated and managed through [GitHub Actions].",
         "Created and deployed entire Azure infrastructure declaratively using [Azure ARM Templates]. Supported [migration] of existing applications to [Azure cloud], using GitHub [Actions] for [CI/CD].",
@@ -111,10 +106,10 @@
       ]
     },
     {
-      "name": "Compendious Medialabs Pvt. Ltd.",
-      "position": "Ansible/Cloud Engineer (Intern)",
-      "location": "Mumbai, IN",
-      "duration": "Dec 2019 - June 2020",
+      "name": "UnderDOGS Studio",
+      "position": "Ansible Python Automation Engineer",
+      "location": "Mumbai, MH",
+      "duration": "June 2018 - Aug 2020",
       "responsiblity": [
         "Developed custom [Ansible Modules] in [Python] to enhance functionality and automate tasks within the infrastructure.",
         "Worked on in-line scripts automation for [Ansible] and [Terraform], using Bash, Python, Shell, and Powershell.",
@@ -130,10 +125,10 @@
       ]
     },
     {
-      "name": "Compendious Medialabs Pvt. Ltd.",
+      "name": "UnderDOGS Studio",
       "position": "Python Engineer (Intern)",
-      "location": "Mumbai, IN",
-      "duration": "May 2019 - Dec 2019",
+      "location": "Mumbai, MH",
+      "duration": "Jan 2018 - June 2018",
       "responsiblity": [
         "Developed [Python scripts] to automate tasks using APIs, including creation and utilization, and implemented [web scraping] and [testing] with [Selenium].",
         "Utilized [Python libraries] such as [requests] for efficient handling of HTTP requests for [data collection].",
