@@ -52,6 +52,7 @@
                     <p class="thisData">Responsibilities:</p>
                     <h4 class="italicData">{{ experience.duration }}</h4>
                 </div>
+                <hr>
                 {% for eachResponsiblity in experience["responsiblity"] %}
                     <p>‣ {{ eachResponsiblity.replace("[","<strong>").replace("]","</strong>") | safe }}</p>
                 {% endfor %}
