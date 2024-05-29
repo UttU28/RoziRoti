@@ -28,8 +28,13 @@ jobs:
         secure: true
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
-        subject: Resume Update 00 [Utsav Chaudhary] ${{ github.run_number }}"
+        subject: "Resume Update #$(printf '%02d' ${{ github.run_number }}) [Utsav Chaudhary]"
         to: utsavmaan28@gmail.com
         from: Utsav Chaudhary
-        body: Build job of ${{ github.repository }} completed successfully!
+        body: |
+          Hey, this is the new resume update for Utsav Chaudhary. 
+          Please find the resume in the attachments!
+          
+          Thanks & Regards
+          Utsav Chaudhary
         attachments: ./makeResume/static/*.pdf
