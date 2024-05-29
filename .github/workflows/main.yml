@@ -23,24 +23,26 @@ jobs:
       run: |
         BUILD_NUMBER=$(printf '%03d' ${{ github.run_number }})
         echo "BUILD_NUMBER=$BUILD_NUMBER" >> $GITHUB_ENV
+        echo "BUILD_NUMBER is $BUILD_NUMBER"
+      
 
-    - name: Send mail
-      uses: dawidd6/action-send-mail@v3
-      with:
-        # connection_url: ${{secrets.MAIL_CONNECTION}}
-        server_address: smtp.gmail.com
-        server_port: 465
-        secure: true
-        username: ${{secrets.MAIL_USERNAME}}
-        password: ${{secrets.MAIL_PASSWORD}}
-        subject: "Resume Update #${BUILD_NUMBER} [Utsav Chaudhary]"
+    # - name: Send mail
+    #   uses: dawidd6/action-send-mail@v3
+    #   with:
+    #     # connection_url: ${{secrets.MAIL_CONNECTION}}
+    #     server_address: smtp.gmail.com
+    #     server_port: 465
+    #     secure: true
+    #     username: ${{secrets.MAIL_USERNAME}}
+    #     password: ${{secrets.MAIL_PASSWORD}}
+    #     subject: "Resume Update #${BUILD_NUMBER} [Utsav Chaudhary]"
 
-        to: utsavmaan28@gmail.com
-        from: Utsav Chaudhary
-        body: |
-          Hey, this is the new resume update for Utsav Chaudhary. 
-          Please find the resume in the attachments!
+    #     to: utsavmaan28@gmail.com
+    #     from: Utsav Chaudhary
+    #     body: |
+    #       Hey, this is the new resume update for Utsav Chaudhary. 
+    #       Please find the resume in the attachments!
           
-          Thanks & Regards
-          Utsav Chaudhary
-        attachments: ./makeResume/static/*.pdf
+    #       Thanks & Regards
+    #       Utsav Chaudhary
+    #     attachments: ./makeResume/static/*.pdf
