@@ -21,7 +21,7 @@ jobs:
 
     - name: Set up environment variables
       run: |
-        BUILD_NUMBER=$(printf '%03d' ${{ github.run_number }})
+        BUILD_NUMBER=Hi $(printf '%03d' ${{ github.run_number }})
         echo "BUILD_NUMBER=$BUILD_NUMBER" >> $GITHUB_ENV
         echo "BUILD_NUMBER is $BUILD_NUMBER"
       
