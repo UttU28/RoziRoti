@@ -19,6 +19,11 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Set up environment variables
+      run: |
+        BUILD_NUMBER=$(printf '%02d' ${{ github.run_number }})
+        echo "BUILD_NUMBER=$BUILD_NUMBER" >> $GITHUB_ENV
+
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
       with:
@@ -28,7 +33,7 @@ jobs:
         secure: true
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
-        subject: "Resume Update #$(printf '%02d' ${GITHUB_RUN_NUMBER}) [Utsav Chaudhary]"
+        subject: "Resume Update #$BUILD_NUMBER [Utsav Chaudhary]"
 
         to: utsavmaan28@gmail.com
         from: Utsav Chaudhary
