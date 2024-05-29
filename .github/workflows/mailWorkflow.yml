@@ -37,7 +37,7 @@ jobs:
         password: ${{secrets.MAIL_PASSWORD}}
         subject: ${{env.SUBJECT}}
 
-        to: utsavmaan28@gmail.com
+        to: utsavmaan28@gmail.com,sample1test.it2@gmail.com
         from: Utsav Chaudhary
         body: |
           Hey, this is the new resume update for Utsav Chaudhary. 
@@ -45,4 +45,6 @@ jobs:
           
           Thanks & Regards
           Utsav Chaudhary
+
+
         attachments: ./makeResume/static/*.pdf
