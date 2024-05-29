@@ -33,7 +33,7 @@ jobs:
         secure: true
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
-        subject: "Resume Update #$BUILD_NUMBER [Utsav Chaudhary]"
+        subject: "Resume Update #${BUILD_NUMBER} [Utsav Chaudhary]"
 
         to: utsavmaan28@gmail.com
         from: Utsav Chaudhary
