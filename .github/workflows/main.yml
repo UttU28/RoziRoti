@@ -28,7 +28,8 @@ jobs:
         secure: true
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
-        subject: "Resume Update #$(printf '%02d' ${{ github.run_number }}) [Utsav Chaudhary]"
+        subject: "Resume Update #$(bash -c \"printf '%02d' ${{ github.run_number }}\") [Utsav Chaudhary]"
+
         to: utsavmaan28@gmail.com
         from: Utsav Chaudhary
         body: |
