@@ -21,9 +21,12 @@ jobs:
 
     - name: Set up environment variables
       run: |
-        BUILD_NUMBER=Hi $(printf '%03d' ${{ github.run_number }})
+        BUILD_NUMBER=$(printf '%03d' ${{ github.run_number }})
+        SUBJECT="Resume Update #$BUILD_NUMBER [Utsav Chaudhary]"
         echo "BUILD_NUMBER=$BUILD_NUMBER" >> $GITHUB_ENV
         echo "BUILD_NUMBER is $BUILD_NUMBER"
+        echo "SUBJECT is $SUBJECT"
+      
       
 
     # - name: Send mail
