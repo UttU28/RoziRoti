@@ -13,7 +13,33 @@ Here is the list of all the technologies and tools mentioned in the provided pro
 5. **ExpressRoute**
 
 ## What was the conflict in your role and how did you resolve it.
--  Last September when we were rolling update on our application which we were Migrating from On-Prem to Azure, So while pushing an application to the production
+-  Last September, during a major project to migrate our application from an on-premises setup to Azure, we faced a significant conflict while rolling out updates to the production environment. The application had been thoroughly tested in the staging environment, but issues arose during the final push to production. 
+- since it was a Major update, that was preplanned, made it worse, the stakeholders wanted some quick actions on this matter.
+- Since, everything BROKEN, everyone PANIK. I CALM them DOWN.
+- Immidiately organized Virtual Meeting so some WFH emp can join, so the objective was to make it up and running, and tracking progress on slack channel dedicated.
+- App team said "Might be issue with some dependency or misconfig in application"
+- Ops team said "Might be the NSG is acting lil funny
+- Setup paired programming for App and Dev team to work together on this and address the issue
+- Developed a rollback plan to revert to the previous stable version if necessary,to minimize downtime
+- Used Ansible to automate and standardize configuration changes across environments.
+- There was some misconfiguration in the Network Security Groups (NSGs) causing Blocking of Application Traffic.
+- So we resolved it, tested the new build again in all the ENV, and then pushed to production.
+- The sudden failure of system was overwhelming for the whole team, but I managed to resolve it by discussing possible issues, pair programming for better understanding of the infra. 
+
+
+
+## A Day in your Life?
+- Checking on emails, checking boards for any stories, bugs or report update.
+- Attend daily stand-up meetings or other scheduled meetings with the team to discuss progress, blockers, and plans for the day. Collaborate with cross-functional teams to align on project goals and timelines.
+- Review the logs and performance metrics of the DevOps pipelines using Azure Monitor and Log Analytics. Look for any failed builds, deployment issues, or performance bottlenecks.
+- Conduct training sessions or knowledge-sharing meetings to help others understand new tools or processes. Writing Knowledge Transfer Documentation for future Use.
+- Using Monitoring and Log Analytics to Analyze the usage data of virtual machines and other resources. Adjust configurations based on usage patterns, such as scaling up or down instances to optimize performance and cost-efficiency.
+- Last week, the application team was working on an application, so my role is to provide infra pipeline for creation of the resource and setting basic network config, where I used Terraform, in test Environment
+- Collaborate with the application development team to understand their infrastructure requirements for new projects or updates.
+	- **Resource Creation**: Write and execute Terraform scripts to provision necessary resources such as VMs, storage accounts, and databases.
+	- **Network Configuration**: Set up VNets, subnets, and network security groups (NSGs) to ensure secure and efficient communication between resources.
+	- **Version Control**: Use Git to version control Terraform scripts, ensuring changes are tracked and can be rolled back if needed.
+- Respond to any infrastructure-related incidents or outages. Investigate root causes, implement fixes, and document the incident resolution process.
 
 ## **Resource Creation**
 - **Terraform**
@@ -67,6 +93,47 @@ Here is the list of all the technologies and tools mentioned in the provided pro
 	- Implemented blue-green deployment strategies in AKS to minimize downtime and risk during application updates.
 	- Networking: Configured advanced networking features, such as VNet integration and private link, to securely connect AKS clusters and ACR, ensuring that all communications occur within the Azure network.
 
+-	**Azure Virtual Networks (VNets)**
+	- Virtual Networks are essential for securely connecting various components of infrastructure, communication between resources, ensuring isolation and segmentation of network traffic.
+
+	- **Configuration**: 
+		-	**Defining Network Segments**
+			-	**Subnets**: VNets can be divided into multiple subnets, each representing a different segment of the network. Subnets help in organizing resources logically and controlling traffic flow between different parts of the application.
+			-	**Address Space**: VNets require an IP address range in CIDR notation. Subnets within a VNet will have their own address ranges carved out of the VNet’s address space.
+			-	**Network Security Groups (NSGs)**: NSGs are used to control inbound and outbound traffic to network interfaces (NIC), VMs, and subnets. They contain security rules that define allowed or denied traffic.
+	- **DNS Settings**:
+		- **Private DNS Zones**: VNets can be linked to Azure DNS private zones for name resolution within the VNet, which helps in managing DNS records for VMs and other resources.
+	- **Peering**:
+		- **VNet Peering**: VNets can be peered to enable resources in different VNets to communicate with each other. This is essential for multi-tier applications where components might reside in different VNets for isolation or scaling purposes.
+	
+	- Created Terraform scripts to define and deploy VNets, subnets, NSGs, and VNet Peering Configurations. Which all is managed in the Terraform State Files.
+	-	VNets are integrated into the Azure DevOps Pipeline, so it can be used for repeatable and consistent deployments.
+	- **Ansible** Playbooks are further used to configure the VMs and other Resources within **VNets Post-Deployment**
+	- We used ansible for setting up routing, DNS Configuration and Firewall Rules.
+	- The inventory file generated by Terraform in the Blob Storage is used by Ansible to create the dynamic host file to access VMs and configure Network Settings.
+	- VNets are Networking Backbone of **Azure Kubernetes Services** Clusters ensuring secure and efficient communication between containerized applications.
+	- AKS can be configured to use VNet integration, allowing pods to receive IP addresses from the VNet, ensuring seamless communication with other Azure resources.
+	-	**Azure Container Registry** access can be restricted to specific VNets using private endpoints, ensuring that only resources within the VNet can pull images from the registry. 
+	- **Docker** containers running in VMs or AKS clusters will utilize the VNet to communicate with each other and other Azure services.
+	-	Network configurations defined at the VNet level ensure that Docker containers can access necessary resources while maintaining isolation and security.
+
+-	**Azure Active Directory (Azure AD)**
+	- Azure Active Directory (Azure AD) is a cloud-based identity and access management service. Providing authentication and authorization for users, applications, and services.
+	- I implemented RBAC for the resources on the infra, serving each team having their own set of infra they can access rest they cant. It uses Service principal for verification of the user.
+	- In the DevOps Pipeline the Terraform code creates and manages Azure AD **Service Principals** and assign roles.
+	- Once the Infra is Created with Azure AD configured and if there is any need to update the roles or manage anything on all the resources, we use **Ansible Scripts** that uses **Service Principal** to connect to Azure AD and can manage roles and permissions. And can also do Dynamic user creation and group assignments based on inventory data.
+	- Integrated **AKS with Azure AD** to enable secure access to the Kubernetes API, allowing role-based access control within the cluster based on Azure AD identities.
+  
+
+-	**Azure Monitor**
+	- 
+
+-	**Azure Log Analytics**
+	- 
+
+-	**Azure Key Vault**
+	- 
+
 - **Azure Boards**
 	- 
 
@@ -82,11 +149,6 @@ Here is the list of all the technologies and tools mentioned in the provided pro
 22. **JIRA**
 23. **Kanban Boards**
 25. **Selenium**
-26. **Azure Virtual Networks (VNets)**
-27. **Azure Active Directory (Azure AD)**
-28. **Azure Monitor**
-29. **Azure Log Analytics**
-30. **Azure Key Vault**
 31. **Git**
 32. **Azure Repos**
 33. **OWASP ZAP**
