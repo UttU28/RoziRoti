@@ -60,6 +60,7 @@ Here is the list of all the technologies and tools mentioned in the provided pro
 	- Integrated Azure Monitoring for Logging and Monitoring, Azure Key Vault for Secrets Management and Active Directory for Authentication and Authorization.
 	- VMSS, Node Pools, 
 
+## **Resource Configuration**
 - **Ansible**
 	- Ansible is a Software Provisioning and Configuration Management Tool used in cloud for setting the desired state on the host infra.
 	- All the HOST information of Terraform Deployed Infrastructure is stored in an Inventory file in Blob Storage.
