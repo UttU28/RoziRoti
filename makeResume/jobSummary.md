@@ -13,16 +13,20 @@ Here is the list of all the technologies and tools mentioned in the provided pro
 5. **ExpressRoute**
 
 ## What was the conflict in your role and how did you resolve it.
--  Last September, during a major project to migrate our application from an on-premises setup to Azure, we faced a significant conflict while rolling out updates to the production environment. The application had been thoroughly tested in the staging environment, but issues arose during the final push to production. 
-- since it was a Major update, that was preplanned, made it worse, the stakeholders wanted some quick actions on this matter.
+-  Last September, during a major project to migrate 
+ application from an on-premises setup to Azure
+ conflict while rolling out updates to the production environment
+ The application had been thoroughly tested in the staging environment, but issues arose during the final push to production. 
+	made it worse, the stakeholders wanted some quick actions on this matter.
 - Since, everything BROKEN, everyone PANIK. I CALM them DOWN.
-- Immidiately organized Virtual Meeting so some WFH emp can join, so the objective was to make it up and running, and tracking progress on slack channel dedicated.
+- Immidiately organized Virtual Meeting 
+the objective was to make it up and running, and tracking progress on slack channel dedicated.
 - App team said "Might be issue with some dependency or misconfig in application"
 - Ops team said "Might be the NSG is acting lil funny
 - Setup paired programming for App and Dev team to work together on this and address the issue
-- Developed a rollback plan to revert to the previous stable version if necessary,to minimize downtime
+- Developed a rollback plan 
 - Used Ansible to automate and standardize configuration changes across environments.
-- There was some misconfiguration in the Network Security Groups (NSGs) causing Blocking of Application Traffic.
+- misconfiguration in the Network Security Groups (NSGs) causing Blocking of Application Traffic.
 - So we resolved it, tested the new build again in all the ENV, and then pushed to production.
 - The sudden failure of system was overwhelming for the whole team, but I managed to resolve it by discussing possible issues, pair programming for better understanding of the infra. 
 
