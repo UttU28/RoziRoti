@@ -10,7 +10,6 @@
 <body>
     <h1 style="text-align: center;">UTSAV CHAUDHARY</h1>
     <div>
-        https://drive.google.com/drive/u/2/folders/1w18dQ50uLPlk3rjNGr4BgbDP5254DOsy
     </div>
 </body>
 </html>
