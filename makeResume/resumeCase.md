@@ -47,3 +47,58 @@ Have good understanding on Agile/Scrum methodologies.
 
 ## PYTHON DATA DISEP
 https://jobs.disneycareers.com/job/-/-/391/66668296800?p_sid=dRKsD8b&p_uid=Nw45aK3c6x&ss=paid&utm_campaign=deetech_coe_us&utm_content=pj_board&utm_medium=jobad&utm_source=dice&dclid=CPuU8LeurocDFRuwOgUdZWA46g
+
+
+## Python LLM Cloud JD
+Advanced Python programming
+Large-scale implementation of Large Language Models (LLMs) in production environments
+Experience in application development and API optimization
+Knowledge of databases relevant to LLMs
+Strong understanding of LLMs and transformer models
+Proficiency with Azure Cloud services, including deployment and management of cloud-based applications
+Familiarity with containerization and orchestration tools (e.g., Docker, Kubernetes)
+Experience with CI/CD pipelines and automated testing frameworks
+Excellent problem-solving skills and ability to tackle complex challenges
+Strong communication and teamwork skills
+
+
+## Role: Azure Technical Architect
+Azure IAAS & PAAS & SAAS • Azure Data Bricks, Data Factory, Pipelines, Event Hubs, Function • apps, Data Engineering • Azure Monitor, Log Analytics Workspaces, Application Insights, • Storage accounts, Dashboards, KQL • Azure Security, Governance and Compliance • Azure solution design and architecture • Foundational SQL experience/usage • Adhere to response and resolution SLAs and escalation processes • in order to ensure fast resolution of customer issues that exceed expectations • Submit well-documented bugs and feature requests arising from customer submitted requests and work with Engineering towards a resolution. • Design and develop frameworks and core functionality. • Identify gaps and come up with working solutions. • Application architecture and solution design in Azure • Analyze production workloads and develop strategies • Utilize technical acumen and in-depth understanding of • business processes and practices to influence the creation, • modification, and execution of operational and strategic plans • Create, maintain, and administer database platforms and applications for company-wide use • Maintain data integrity and database performance, stability,and scalability. Make recommendations to optimize database and application performance and efficiency • Diagnose and resolve database, network, and security issues. 
+
+
+## PYTHON DEVOPS ENGINEER
+Mandate Required skills
+Programming: Proficient in Python. Experienced on JavaScript and Node.js.
+Web Frameworks: Experience with Flask or Django for web applications and APIs.
+API Development: Experience with async framework like Quart or FastAPI for creating fast and efficient APIs.
+Azure SDK: Knowledge of Azure SDK for Python for integrating Azure services.
+Web authentication and authorization, including LDAP integration with web application
+Nice to have:
+Familiarity with Requests or HTTPX for interacting with Confluence APIs.
+Azure Services: Experience with Azure document AI, Azure AI Search and Azure OpenAI, Azure App Server.
+
+
+## SENIOR DATA ENGINEER
+Requirements
+Has demonstrated proficiency in designing and developing Azure Data Factory Pipelines. (2 Years)
+Strong Experience designing and implementing Data Warehouse
+Experience working with Microsoft BI stack (SSIS/SSRS/SSAS) and Microsoft SQL server. (5 Years)
+Must have Experience with at least one Columnar MPP Cloud data warehouse (Snowflake /Azure Synapse / Redshift) (2+ years)
+Working knowledge managing data in the Data Lake
+Experience with Git and Azure Devops
+Experience in Agile, Jira and Confluence
+Solid understanding of programming SQL objects (procedures, triggers, views, functions) in SQL Server. Experience optimizing SQL queries a plus
+Working Knowledge of Azure Architecture, Data Lake
+Advanced understanding of T-SQL, indexes, stored procedures, triggers, functions, views, etc
+Responsibilities
+Design, develop and implement scalable batch/real time data pipelines (ETLs) to integrate data from a variety of sources into Data Warehouse and Data Lake
+Design and implement data model changes that align with warehouse dimensional modeling standards
+Proficient in Data Lake, Data Warehouse Concepts and Dimensional Data Model
+Responsible for maintenance and support of all database environments, design and develop data pipelines, workflow, ETL solutions on both on-prem and cloud-based environments
+Design and develop SQL stored procedures, functions, views, and triggers
+Design, code, test, document and troubleshoot deliverables
+Collaborate with others to test and resolve issues with deliverables
+Maintain awareness of and ensure adherence to company standards regarding privacy
+Create and maintain Design documents, Source to Target mappings, unit test cases, data seeding
+Ability to perform Data Analysis and Data Quality tests and create audit for the ETLs
+Perform Continuous Integration and deployment using Azure Devops and Git
